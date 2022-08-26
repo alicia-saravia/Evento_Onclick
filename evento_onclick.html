@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="evento_onclick.css">
+    <title>Evento Onclick</title>
+</head>
+<body>
+    <div class="conteiner-principal">
+
+        <div class="barra-navegacion"> <!--abertura del div (sub conteiner1) dentro de el de da las caracteristicas, dando nomnbre a sus clases.-->
+            <h1 class="barra-title">Dojonary</h1>            
+            <input type="text" id="fname" name="fname" class="search" placeholder="Search"><br><br>
+            <button class="boton" onclick="login()" id="login">Login</button>    
+        </div><!--cierre div-->
+
+        <div class="cuerpo">
+            <div class="diccionario">
+                <div class="box">
+                    <div class="palabra">
+                        <h1>ninja</h1>
+                        <p>noun</p>
+                        <p>Plural: ninjas</p>
+                        <button class="cuadrado"  onclick="ninja()" id="ninja">13 likes</button>    
+                    </div>
+                    <div class="definicion">
+                        <p>A practitioner skilled in the <a href="http://www.japanese.com">Japanese</a> art of <a href="http://www.ninjutsu.com">ninjutsu</a></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="palabra">
+                        <h1>ninja</h1>
+                        <p>noun</p>
+                        <p>Plural: ninjas</p>
+                        <button class="cuadrado" id="ninja2">37 likes</button>    
+                    </div>
+                    <div class="definicion">
+                        <p>A <a href="http://www.programmer.com">programmer</a> who breaks down problems with <a href="http://www.zen.com">zen</a>-like focus</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="add-definicion">
+                <div class="box2">
+                    <h2>Dojonary is defined by YOU</h2>
+                    <button class="add-boton"  onclick="boton()" id="add-boton">Add Definition</button>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="evento_onclick.js"></script>
+</body>
+</html>
